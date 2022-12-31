@@ -5,7 +5,7 @@ import "@testing-library/jest-dom";
 import { within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 
-import { ContextWrapperProp } from "../../utils/testProps";
+import { ContextWrapperProp } from "../../../utils/testProps";
 
 const stateProp = [
   {

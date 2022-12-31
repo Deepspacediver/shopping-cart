@@ -1,10 +1,10 @@
 import CartPreview from "./CartPreview";
-import { ContextWrapperProp } from "../../utils/testProps";
+import { ContextWrapperProp } from "../../../utils/testProps";
 
 import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
 
-jest.mock("../Image/Image", () => () => <img src="prop" alt="prop" />);
+jest.mock("../../Image/Image", () => () => <img src="prop" alt="prop" />);
 
 const stateProp = [
   {

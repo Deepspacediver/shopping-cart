@@ -1,5 +1,5 @@
 import TotalDisplay from "./TotalDisplay";
-import { ContextWrapperProp } from "../../utils/testProps";
+import {ContextWrapperProp} from "../../../utils/testProps"
 
 import { render, screen } from "@testing-library/react";
 

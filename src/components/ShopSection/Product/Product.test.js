@@ -1,7 +1,7 @@
 import Product from "./Product";
 import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
-import { ContextWrapperProp } from "../../utils/testProps";
+import { ContextWrapperProp } from "../../../utils/testProps";
 import userEvent from "@testing-library/user-event";
 
 const objProp = {

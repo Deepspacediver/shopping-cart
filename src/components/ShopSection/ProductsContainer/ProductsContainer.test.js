@@ -1,5 +1,5 @@
 import ProductsContainer from "./ProductsContainer";
-import birdProducts from "../../utils/birdProducts";
+import birdProducts from "../../../utils/birdProducts";
 
 import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";

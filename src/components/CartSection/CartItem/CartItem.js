@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "../Image/Image";
+import Image from "../../Image/Image";
 import styled from "styled-components";
 
 const CartItem = ({

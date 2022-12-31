@@ -1,4 +1,4 @@
-import { ShopCartContext } from "../../utils/ShopContext";
+import { ShopCartContext } from "../../../utils/ShopContext";
 import { useContext } from "react";
 
 const TotalDisplay = () => {

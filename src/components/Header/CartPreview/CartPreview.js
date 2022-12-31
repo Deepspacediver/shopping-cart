@@ -1,5 +1,5 @@
-import { ShopCartContext } from "../../utils/ShopContext";
-import { ReactComponent as CartSVG } from "../../assets/icons/shopping-cart.svg";
+import { ShopCartContext } from "../../../utils/ShopContext";
+import { ReactComponent as CartSVG } from "../../../assets/icons/shopping-cart.svg";
 import { useContext } from "react";
 import styled from "styled-components";
 

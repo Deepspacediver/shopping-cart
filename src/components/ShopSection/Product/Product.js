@@ -1,5 +1,5 @@
-import { ShopCartDispatchContext } from "../../utils/ShopContext";
-import Image from "../Image/Image";
+import { ShopCartDispatchContext } from "../../../utils/ShopContext";
+import Image from "../../Image/Image";
 
 import { useState, useContext } from "react";
 import styled from "styled-components";

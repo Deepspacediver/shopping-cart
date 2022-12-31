@@ -1,5 +1,5 @@
-import birdProducts from "../../utils/birdProducts";
-import ShopProduct from "../Product/Product";
+import birdProducts from "../../../utils/birdProducts";
+import Product from "../Product/Product";
 
 import styled from "styled-components";
 
@@ -13,7 +13,7 @@ const ProductsContainer = () => {
       <ProductsWrapper>
         {birdProducts.map((bird) => {
           return (
-            <ShopProduct
+            <Product
               key={bird.id}
               id={bird.id}
               name={bird.name}
