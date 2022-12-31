@@ -37,13 +37,19 @@ export const shopCartReducer = (state, action) => {
     case "add": {
       const itemId = action.id;
       const amount = action.amount;
-      console.log(state)
-      const stateCopy = [...state];
-      const indexInState = stateCopy.findIndex((el) => el.id === itemId);
+      const indexInState = state.findIndex((el) => el.id === itemId);
 
       if (indexInState !== -1) {
-        stateCopy[indexInState].amount += amount;
-        return stateCopy;
+        /* Returns new array instead of a shallow copy,
+         previously Strict Mode detected possible bug of doubling the amount assigned  */
+        return [
+          ...state.slice(0, indexInState),
+          {
+            ...state[indexInState],
+            amount: state[indexInState].amount + amount,
+          },
+          ...state.slice(indexInState + 1),
+        ];
       } else {
         const birdProduct = birdProducts.find((el) => el.id === itemId);
         return [...state, { ...birdProduct, amount: amount }];
