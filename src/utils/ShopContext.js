@@ -55,11 +55,19 @@ export const shopCartReducer = (state, action) => {
         return [...state, { ...birdProduct, amount: amount }];
       }
     }
+    case "remove": {
+      const id = action.id
+      return state.flatMap((el) => (el.id === id ? [] : el));
+    }
+    case "checkout": {
+      return [];
+    }
     default:
       throw new Error(`Unkown action type: ${action.type}`);
   }
 };
 
-const findBirdIndex = (itemId, arr) => arr.findIndex((el) => el.id === itemId);
+// const removeFromArray = (arr, id) =>
+//   arr.flatMap((el) => (el.id === id ? [] : el));
 
 export default ShopCartProvider;
