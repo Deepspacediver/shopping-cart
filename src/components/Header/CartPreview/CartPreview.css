@@ -1,0 +1,29 @@
+.header-nav_icon-wrapper {
+  width: 45px;
+}
+
+.header-nav_cart-icon {
+  position: relative;
+}
+
+.header-nav_cart-amount {
+  position: absolute;
+  transform: translate(-10%, -60%);
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-weight: bold;
+  text-align: center;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.header-nav_cart-amount--hidden {
+  display: none;
+}
