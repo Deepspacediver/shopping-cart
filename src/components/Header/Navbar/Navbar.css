@@ -1,0 +1,42 @@
+/* .header-navbar {
+} */
+.header-navbar_list {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header-navbar_list-item {
+  padding: 0.4rem;
+}
+
+.header-navbar-link {
+  display: inline-block;
+}
+
+.header-navbar-link:hover {
+  color: var(--secondary-color);
+}
+
+.header-navbar-link::after {
+  content: "";
+  display: block;
+  border-bottom: 4px solid var(--secondary-color);
+
+  transition: 250ms ease-in-out;
+  transform: scaleX(0);
+  transform-origin: right;
+}
+
+/* Router NavList Active class */
+.active {
+  font-weight: bold;
+}
+
+.header-navbar-link.active::after {
+  content: "";
+  display: block;
+  border-bottom: 4px solid var(--secondary-color);
+  transform: scaleX(1);
+}

@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import styled from "styled-components";
+import "./Navbar.css";
 import CartPreview from "../CartPreview/CartPreview";
 
 const Navbar = () => {
@@ -8,25 +8,34 @@ const Navbar = () => {
   };
   const handleActive = ({ isActive }) => (isActive ? activeStyle : undefined);
   return (
-    <ul>
-      <StyledLi>
-        <NavLink style={handleActive} to="/" data-testid="navlink">
-          Home
-        </NavLink>
-      </StyledLi>
-      <StyledLi>
-        <NavLink style={handleActive} to="/shop" data-testid="navlink">
-          Shop
-        </NavLink>
-      </StyledLi>
-      <StyledLi>
-        <NavLink style={handleActive} to="/cart" data-testid="navlink">
-          {<CartPreview />}
-        </NavLink>
-      </StyledLi>
-    </ul>
+    <nav className="header-navbar">
+      <ul className="header-navbar_list">
+        <li className="header-navbar_list-item">
+          <NavLink className="header-navbar-link" to="/" data-testid="navlink">
+            Home
+          </NavLink>
+        </li>
+        <li className="header-navbar_list-item">
+          <NavLink
+            className="header-navbar-link"
+            to="/shop"
+            data-testid="navlink"
+          >
+            Shop
+          </NavLink>
+        </li>
+        <li className="header-navbar_list-item">
+          <NavLink
+            className="header-navbar-link"
+            to="/cart"
+            data-testid="navlink"
+          >
+            {<CartPreview />}
+          </NavLink>
+        </li>
+      </ul>
+    </nav>
   );
 };
 
-const StyledLi = styled.li``;
 export default Navbar;
