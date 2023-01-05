@@ -1,13 +1,11 @@
-import styled from "styled-components";
 import Navbar from "./Navbar/Navbar";
+import "./Header.css";
 
 const Header = () => (
-  <StyledHeader>
-    <h1>Header</h1>
+  <header className="header">
+    <h1 className="header_heading">Pretty Birds</h1>
     <Navbar />
-  </StyledHeader>
+  </header>
 );
-
-const StyledHeader = styled.header``
 
 export default Header;
