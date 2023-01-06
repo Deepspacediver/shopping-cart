@@ -8,7 +8,7 @@ import styled from "styled-components";
 
 function App() {
   return (
-    <div className="App">
+    <>
       <BrowserRouter>
         <ShopCartProvider>
           <Header />
@@ -21,7 +21,7 @@ function App() {
           </StyledMain>
         </ShopCartProvider>
       </BrowserRouter>
-    </div>
+    </>
   );
 }
 

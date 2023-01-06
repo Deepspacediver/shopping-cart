@@ -4,6 +4,7 @@ import {
   ShopCartDispatchContext,
 } from "../../../utils/ShopContext";
 import CartItem from "../CartItem/CartItem";
+import "./CartItemContainer.css";
 
 const CartItemContainer = () => {
   const shopCart = useContext(ShopCartContext);
@@ -28,21 +29,24 @@ const CartItemContainer = () => {
     });
   };
 
-  return shopCart.map((el) => {
-    return (
-      <React.Fragment key={el.id}>
-        <CartItem
-          id={el.id}
-          name={el.name}
-          src={el.src}
-          amount={el.amount}
-          handleIncrement={handleIncrement}
-          handleDecrement={handleDecrement}
-          handleRemove={handleRemove}
-        />
-      </React.Fragment>
-    );
-  });
+  return (
+    <div className="shopping-cart_item-container">
+      {shopCart.map((el) => {
+        return (
+          <CartItem
+            key={el.id}
+            id={el.id}
+            name={el.name}
+            src={el.src}
+            amount={el.amount}
+            handleIncrement={handleIncrement}
+            handleDecrement={handleDecrement}
+            handleRemove={handleRemove}
+          />
+        );
+      })}
+    </div>
+  );
 };
 // Provide context and reducer when rendering in tests
 export default CartItemContainer;

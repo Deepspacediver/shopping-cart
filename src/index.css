@@ -15,6 +15,18 @@
   --secondary-color: rgb(254, 88, 0);
 }
 
+#root,
+html,
+body {
+  height: 100%;
+}
+#root {
+  display: flex;
+  flex-direction: column;
+}
+main {
+  height: 100%;
+}
 /* Remove default padding */
 ul,
 ol {
@@ -23,18 +35,17 @@ ol {
 
 /* Set core body defaults */
 body {
-  min-height: 100vh;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   font-family: Roboto, Arial, Helvetica, sans-serif;
-  background-color: #f3f2ee;
   /* background-image: url("./assets/background/parrot-bg.webp"); */
-  background: rgb(240, 240, 240);
+  background: rgb(225, 226, 228);
   background: radial-gradient(
     circle,
-    rgba(240, 240, 240, 0.9640231092436975) 0%,
-    rgba(166, 166, 166, 1) 100%
+    rgba(225, 226, 228, 1) 0%,
+    rgba(240, 241, 241, 1) 50%,
+    rgba(200, 201, 202, 1) 100%
   );
 }
 
@@ -74,4 +85,19 @@ select {
 }
 button {
   cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--secondary-color);
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }

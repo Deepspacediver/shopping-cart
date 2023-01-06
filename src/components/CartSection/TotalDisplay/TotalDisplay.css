@@ -1,0 +1,6 @@
+.shopping-cart_total-display {
+  background-color: white;
+  padding: 1rem;
+  border: 1px solid black;
+  font-size: var(--fs-400);
+}

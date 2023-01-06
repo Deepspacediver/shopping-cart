@@ -1,16 +1,19 @@
 import birdProducts from "../../../utils/birdProducts";
 import Product from "../Product/Product";
+import "./ProductsContainer.css";
 
-import styled from "styled-components";
+// import styled from "styled-components";
 
 const ProductsContainer = () => {
   return (
-    <>
-      <h2>Bird Posters</h2>
-      <p data-testid="description">
-        Collection of Posters with Exotic Birds from all over the world
-      </p>
-      <ProductsWrapper>
+    <div className="products-container">
+      <div className="products-container_introduction">
+        <h2 className="products-container_heading">Bird Posters</h2>
+        <p className="products-container_description" data-testid="description">
+          Collection of Posters with Exotic Birds from all over the world
+        </p>
+      </div>
+      <section className="products-wrapper">
         {birdProducts.map((bird) => {
           return (
             <Product
@@ -22,14 +25,14 @@ const ProductsContainer = () => {
             />
           );
         })}
-      </ProductsWrapper>
-    </>
+      </section>
+    </div>
   );
 };
 
-const ProductsWrapper = styled.div`
+/* const ProductsWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-`;
+`; */
 
 export default ProductsContainer;

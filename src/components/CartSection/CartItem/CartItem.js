@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "../../Image/Image";
-import styled from "styled-components";
+import "./CartItem.css"
 
 const CartItem = ({
   id,
@@ -9,22 +9,36 @@ const CartItem = ({
   amount,
   handleIncrement,
   handleDecrement,
-  handleRemove
+  handleRemove,
 }) => {
   return (
-    <CartItemWrapper key={id}>
-      <h3>{name}</h3>
-      <Image src={src} alt={name} />
-      <CartItemAmountWrapper data-id={id}>
-        <button onClick={handleIncrement}>+</button>
-        <p data-testid="amount-display">{amount}</p>
-        <button onClick={handleDecrement}>-</button>
-      </CartItemAmountWrapper>
-      <button onClick={handleRemove} data-id={id}>Remove</button>
-    </CartItemWrapper>
+    <article className="shopping-cart_item" key={id}>
+      <figure className="shopping-cart_item-img-wrapper">
+        <Image name="shopping-cart_item-img" src={src} alt={name} />
+      </figure>
+
+      <div className="shoppign-cart_item-info">
+        <h3 className="shopping-cart_item-heading">{name}</h3>
+        <div className="amount-wrapper" data-id={id}>
+          <button className="btn btn__cart-decrement" onClick={handleDecrement}>
+            -
+          </button>
+          <p
+            className="shopping-cart_amount-display"
+            data-testid="amount-display"
+          >
+            {amount}
+          </p>
+          <button className="btn btn__cart-increment" onClick={handleIncrement}>
+            +
+          </button>
+        </div>
+        <button className="btn btn__remove" onClick={handleRemove} data-id={id}>
+          Remove
+        </button>
+      </div>
+    </article>
   );
 };
 
-const CartItemWrapper = styled.div``;
-const CartItemAmountWrapper = styled.div``;
 export default CartItem;

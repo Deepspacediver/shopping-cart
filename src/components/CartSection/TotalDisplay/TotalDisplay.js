@@ -1,5 +1,6 @@
 import { ShopCartContext } from "../../../utils/ShopContext";
 import { useContext } from "react";
+import "./TotalDisplay.css";
 
 const TotalDisplay = () => {
   const shopCart = useContext(ShopCartContext);
@@ -8,7 +9,11 @@ const TotalDisplay = () => {
     0
   );
 
-  return <p data-testid="total-display">Total: ${getPrice}</p>;
+  return getPrice ? (
+    <p className="shopping-cart_total-display" data-testid="total-display">
+      Total: <b>${getPrice}</b>
+    </p>
+  ) : null;
 };
 
 export default TotalDisplay;

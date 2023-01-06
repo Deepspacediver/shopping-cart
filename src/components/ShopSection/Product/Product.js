@@ -1,8 +1,8 @@
 import { ShopCartDispatchContext } from "../../../utils/ShopContext";
 import Image from "../../Image/Image";
+import "./Product.css";
 
 import { useState, useContext } from "react";
-import styled from "styled-components";
 
 const Product = ({ id, name, price, src }) => {
   const [amount, setAmount] = useState(1);
@@ -15,7 +15,6 @@ const Product = ({ id, name, price, src }) => {
   };
   const handleChange = (e) => setAmount(e.target.value);
   const handleAdd = (e) => {
-    // console.log(amount)
     dispatch({
       type: "add",
       id: e.target.dataset.id,
@@ -23,21 +22,36 @@ const Product = ({ id, name, price, src }) => {
     });
   };
   return (
-    <StyledProduct data-id={id}>
-      <Image src={src} alt={name} />
-      <h3>{name}</h3>
-      <p data-testid="price">{price}</p>
-      <>
-        <button onClick={handleDecrement}>-</button>
-        <input onChange={handleChange} type="number" min={1} value={amount} />
-        <button onClick={handleIncrement}>+</button>
-      </>
-      <button data-id={id} onClick={handleAdd}>
+    <article className="product" data-id={id}>
+      <figure className="product_img-wrapper">
+        <Image src={src} alt={name} name="product_img" />
+      </figure>
+      <div className="product_info-wrapper">
+        <h3 className="product_heading">{name}</h3>
+        <p className="product_price" data-testid="price">
+          {price}
+        </p>
+      </div>
+      <div className="amount-wrapper">
+        <button className="btn btn__product-decrement" onClick={handleDecrement}>
+          -
+        </button>
+        <input
+          className="product_amount-input"
+          onChange={handleChange}
+          type="number"
+          min={1}
+          value={amount}
+        />
+        <button className="btn btn__product-increment" onClick={handleIncrement}>
+          +
+        </button>
+      </div>
+      <button className="btn btn__add-item" data-id={id} onClick={handleAdd}>
         Add To Cart
       </button>
-    </StyledProduct>
+    </article>
   );
 };
 
-const StyledProduct = styled.div``;
 export default Product;

@@ -1,14 +1,18 @@
 import Checkout from "./Checkout/Checkout";
 import CartItemContainer from "./CartItemContainer/CartItemContainer";
 import TotalDisplay from "./TotalDisplay/TotalDisplay";
+import "./ShoppingCart.css"
+
 const ShoppingCart = () => {
   return (
-    <>
-      <h3>Your Cart</h3>
+    <div className="shopping-cart">
+      <h2 className="shopping-cart_heading">Your Cart</h2>
       <CartItemContainer />
-      <TotalDisplay />
-      <Checkout />
-    </>
+      <div className="shopping-cart_purchase-wrapper">
+        <TotalDisplay />
+        <Checkout />
+      </div>
+    </div>
   );
 };
 

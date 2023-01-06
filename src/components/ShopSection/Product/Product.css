@@ -1,0 +1,70 @@
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border: 2px solid var(--primary-color);
+  /* background-color: gainsboro; */
+}
+
+.product_img-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.product_img {
+  object-fit: cover;
+  min-height: 15rem;
+  width: 100%;
+}
+.product_info-wrapper {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0.3rem;
+}
+
+.product_heading,
+.product_price {
+  font-size: var(--fs-400);
+  flex-basis: 100%;
+  text-align: center;
+}
+
+.amount-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  font-size: var(--fs-400);
+  display: inline-block;
+}
+.btn__product-decrement,
+.btn__product-increment {
+  padding: 0.3rem 1rem;
+}
+.product_price::before {
+  content: "$";
+}
+
+.product_amount-input {
+  padding: 0.3rem 0;
+  display: inline-block;
+  font-size: var(--fs-400);
+  width: 100%;
+  text-align: center;
+  margin: 0;
+}
+
+.btn__add-item {
+  padding: 0.3rem 0;
+  width: 100%;
+}
