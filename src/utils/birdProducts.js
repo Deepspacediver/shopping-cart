@@ -41,13 +41,13 @@ const birdProducts = [
   },
   {
     id: "tucana-aracari",
-    name: "TucanaAracari",
+    name: "Tucana Aracari",
     price: 198.0,
     src: TucanaAracari,
   },
   {
     id: "variegated-parrot",
-    name: "VariegatedParrot",
+    name: "Variegated Parrot",
     price: 149.0,
     src: VariegatedParrot,
   },
