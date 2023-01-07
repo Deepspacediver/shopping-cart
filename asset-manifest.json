@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/shopping-cart/static/css/main.417ca468.css",
-    "main.js": "/shopping-cart/static/js/main.546dd6c2.js",
-    "static/media/Lanius.jpg": "/shopping-cart/static/media/Lanius.f0d6c6f2e4d5db3bf127.jpg",
-    "static/media/Yellow-Crested-Cockatoo.jpg": "/shopping-cart/static/media/Yellow-Crested-Cockatoo.81b7af1180501a8bd9e9.jpg",
-    "static/media/Mangiapepe-Toucan.jpg": "/shopping-cart/static/media/Mangiapepe-Toucan.21d10e42006ae1834d38.jpg",
-    "static/media/Yellow-Headed-Parrot.jpg": "/shopping-cart/static/media/Yellow-Headed-Parrot.f4a8d6ba526eaa71fa75.jpg",
-    "static/media/Variegated-Parrot.jpg": "/shopping-cart/static/media/Variegated-Parrot.d01525a3cdaeab760200.jpg",
-    "static/media/Red-Macaw.jpg": "/shopping-cart/static/media/Red-Macaw.7bddd8cb5106efa742cb.jpg",
-    "static/media/Bird-Of-Paradise.jpg": "/shopping-cart/static/media/Bird-Of-Paradise.f97cda1fc931a788c523.jpg",
-    "static/media/Tucana-Aracari.jpg": "/shopping-cart/static/media/Tucana-Aracari.c4ed7a43193a25688d55.jpg",
-    "static/media/Heavenly-Cuckoo.jpg": "/shopping-cart/static/media/Heavenly-Cuckoo.68103eb95a24ff99a4da.jpg",
-    "static/media/parrot-main.webp": "/shopping-cart/static/media/parrot-main.693a7cee0b557e748072.webp",
-    "static/media/parrot-empty-cart.webp": "/shopping-cart/static/media/parrot-empty-cart.c9b38b3162f916d5ae1a.webp",
-    "index.html": "/shopping-cart/index.html",
-    "static/media/shopping-cart.svg": "/shopping-cart/static/media/shopping-cart.98975d80aee1eab7bfe731b65cd27f53.svg",
-    "main.417ca468.css.map": "/shopping-cart/static/css/main.417ca468.css.map",
-    "main.546dd6c2.js.map": "/shopping-cart/static/js/main.546dd6c2.js.map"
+    "main.css": "/static/css/main.417ca468.css",
+    "main.js": "/static/js/main.2c0730e4.js",
+    "static/media/Lanius.jpg": "/static/media/Lanius.f0d6c6f2e4d5db3bf127.jpg",
+    "static/media/Yellow-Crested-Cockatoo.jpg": "/static/media/Yellow-Crested-Cockatoo.81b7af1180501a8bd9e9.jpg",
+    "static/media/Mangiapepe-Toucan.jpg": "/static/media/Mangiapepe-Toucan.21d10e42006ae1834d38.jpg",
+    "static/media/Yellow-Headed-Parrot.jpg": "/static/media/Yellow-Headed-Parrot.f4a8d6ba526eaa71fa75.jpg",
+    "static/media/Variegated-Parrot.jpg": "/static/media/Variegated-Parrot.d01525a3cdaeab760200.jpg",
+    "static/media/Red-Macaw.jpg": "/static/media/Red-Macaw.7bddd8cb5106efa742cb.jpg",
+    "static/media/Bird-Of-Paradise.jpg": "/static/media/Bird-Of-Paradise.f97cda1fc931a788c523.jpg",
+    "static/media/Tucana-Aracari.jpg": "/static/media/Tucana-Aracari.c4ed7a43193a25688d55.jpg",
+    "static/media/Heavenly-Cuckoo.jpg": "/static/media/Heavenly-Cuckoo.68103eb95a24ff99a4da.jpg",
+    "static/media/parrot-main.webp": "/static/media/parrot-main.693a7cee0b557e748072.webp",
+    "static/media/parrot-empty-cart.webp": "/static/media/parrot-empty-cart.c9b38b3162f916d5ae1a.webp",
+    "index.html": "/index.html",
+    "static/media/shopping-cart.svg": "/static/media/shopping-cart.98975d80aee1eab7bfe731b65cd27f53.svg",
+    "main.417ca468.css.map": "/static/css/main.417ca468.css.map",
+    "main.2c0730e4.js.map": "/static/js/main.2c0730e4.js.map"
   },
   "entrypoints": [
     "static/css/main.417ca468.css",
-    "static/js/main.546dd6c2.js"
+    "static/js/main.2c0730e4.js"
   ]
 }
