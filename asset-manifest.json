@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.417ca468.css",
-    "main.js": "/static/js/main.2c0730e4.js",
+    "main.js": "/static/js/main.b940cca8.js",
     "static/media/Lanius.jpg": "/static/media/Lanius.f0d6c6f2e4d5db3bf127.jpg",
     "static/media/Yellow-Crested-Cockatoo.jpg": "/static/media/Yellow-Crested-Cockatoo.81b7af1180501a8bd9e9.jpg",
     "static/media/Mangiapepe-Toucan.jpg": "/static/media/Mangiapepe-Toucan.21d10e42006ae1834d38.jpg",
@@ -16,10 +16,10 @@
     "index.html": "/index.html",
     "static/media/shopping-cart.svg": "/static/media/shopping-cart.98975d80aee1eab7bfe731b65cd27f53.svg",
     "main.417ca468.css.map": "/static/css/main.417ca468.css.map",
-    "main.2c0730e4.js.map": "/static/js/main.2c0730e4.js.map"
+    "main.b940cca8.js.map": "/static/js/main.b940cca8.js.map"
   },
   "entrypoints": [
     "static/css/main.417ca468.css",
-    "static/js/main.2c0730e4.js"
+    "static/js/main.b940cca8.js"
   ]
 }
