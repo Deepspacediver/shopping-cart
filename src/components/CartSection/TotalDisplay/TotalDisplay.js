@@ -9,11 +9,14 @@ const TotalDisplay = () => {
     0
   );
 
-  return getPrice ? (
-    <p className="shopping-cart_total-display" data-testid="total-display">
-      Total: <b>${getPrice}</b>
-    </p>
-  ) : null;
+  return (
+    <div className="shopping-cart_total-wrapper">
+      <p className="shopping-cart_total-caption">Total: </p>
+      <p className="shopping-cart_total-display" data-testid="total-display">
+        <b>${getPrice}</b>
+      </p>
+    </div>
+  );
 };
 
 export default TotalDisplay;

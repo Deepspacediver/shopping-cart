@@ -17,6 +17,6 @@ describe("TotalDispla", () => {
       </ContextWrapperProp>
     );
 
-    expect(screen.getByTestId("total-display").textContent).toBe("Total: $80");
+    expect(screen.getByTestId("total-display").textContent).toBe("$80");
   });
 });
