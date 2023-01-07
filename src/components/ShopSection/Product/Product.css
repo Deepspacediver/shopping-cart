@@ -5,7 +5,7 @@
   align-items: center;
   width: 100%;
   border: 2px solid var(--primary-color);
-  /* background-color: gainsboro; */
+  background-color: gainsboro;
 }
 
 .product_img-wrapper {
@@ -46,19 +46,32 @@
 .btn {
   font-size: var(--fs-400);
   display: inline-block;
+  background-color: gainsboro;
+  filter: saturate(1.9);
+  outline: none;
+  border: 1px ridge var(--primary-color);
+  transition: background-color 200ms ease-out;
 }
+
+.btn:active {
+  background-color: var(--secondary-color);
+  filter: saturate(1);
+}
+
 .btn__product-decrement,
 .btn__product-increment {
-  padding: 0.3rem 1rem;
+  padding: calc(0.3rem + 1px) 1rem;
 }
 .product_price::before {
   content: "$";
 }
 
 .product_amount-input {
-  padding: 0.3rem 0;
+  padding: calc(0.3rem + 0.5px) 0;
   display: inline-block;
   font-size: var(--fs-400);
+  border: 1.5px solid var(--primary-color);
+  font-weight: bold;
   width: 100%;
   text-align: center;
   margin: 0;

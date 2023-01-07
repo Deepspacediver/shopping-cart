@@ -33,7 +33,10 @@ const Product = ({ id, name, price, src }) => {
         </p>
       </div>
       <div className="amount-wrapper">
-        <button className="btn btn__product-decrement" onClick={handleDecrement}>
+        <button
+          className="btn btn__product-decrement"
+          onClick={handleDecrement}
+        >
           -
         </button>
         <input
@@ -43,7 +46,10 @@ const Product = ({ id, name, price, src }) => {
           min={1}
           value={amount}
         />
-        <button className="btn btn__product-increment" onClick={handleIncrement}>
+        <button
+          className="btn btn__product-increment"
+          onClick={handleIncrement}
+        >
           +
         </button>
       </div>

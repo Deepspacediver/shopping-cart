@@ -1,6 +1,27 @@
-.shopping-cart_total-display {
+.shopping-cart_total-wrapper {
   background-color: white;
   padding: 1rem;
   border: 1px solid black;
   font-size: var(--fs-400);
+  flex-basis: 100%;
+
+  display: flex;
+  justify-content: space-around;
+}
+
+.shopping-cart_empty-cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.shopping-cart_empty-cart-img,
+.shopping-cart_empty-cart-info {
+  opacity: 0.5;
+}
+
+.shopping-cart_empty-cart-info {
+  font-size: var(--fs-400);
+  font-weight: bold;
 }

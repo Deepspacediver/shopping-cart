@@ -1,8 +1,5 @@
-import styled from "styled-components";
+const Image = ({ src, alt, name }) => (
+  <img className={name} src={src} alt={alt + " image"} />
+);
 
-const Image = ({ src, alt }) => <StyledImage src={src} alt={alt + " image"} />;
-
-const StyledImage = styled.img`
-  object-fit: cover;
-`;
 export default Image;
